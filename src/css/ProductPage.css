@@ -1,0 +1,56 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header {
+    margin-top:23px;
+    background-color: navy; 
+    color: #fff; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+    gap: 0rem;
+    padding: 0rem; 
+}
+
+nav a {
+    color: black;
+}
+
+.hero {
+    background-color: navy; 
+    color: #ddd; 
+    padding: 2rem;
+    text-align: center; 
+}
+
+.products {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; 
+    padding: 2rem; 
+}
+
+.product {
+    border: 1px solid
+    color #ddd;
+    padding: 1rem; 
+    text-align: center; 
+}
+
+.product img {
+    max-width: 100%; 
+    height: auto; 
+
+}
+
+.Our{
+    color: #fff;
+    font-weight: lighter;
+}

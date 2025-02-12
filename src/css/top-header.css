@@ -1,0 +1,39 @@
+.top-header {
+    background-color: navy;
+    color: white;
+    margin-top: 23px;
+    display:flex;
+    justify-content:space-between; 
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.top-header-links {
+    display: flexbox;
+    list-style-type: none;
+    padding: 0;  
+    justify-content: flex-end;
+}
+    
+.top-header a{
+    color: white; 
+    text-decoration: none;
+    padding: 10px 10px; 
+}
+
+.top-header a:hover { 
+    text-decoration: underline;
+    color: white; 
+    border-radius: 4px;
+}
+
+
+
+

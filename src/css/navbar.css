@@ -1,0 +1,39 @@
+.navbar {
+    background-color: white; 
+    color: navy; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 10px;
+    border-bottom: 3px solid grey;
+}
+
+.navbar-links {
+color:black;
+justify-content: space-between;
+padding-right: 4px;
+text-decoration: none;
+gap:28px !important;
+
+}
+
+.navbar-links {
+    display: flex;
+    gap: 18px;
+}
+
+
+.navbar-links a:hover {
+    color: blue; 
+}
+
+.Gnet{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.Gnet a:hover{
+    color:blue
+
+
+}
