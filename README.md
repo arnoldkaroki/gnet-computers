@@ -1,1 +1,1 @@
-# g-net_computers
+# gnet-computers
