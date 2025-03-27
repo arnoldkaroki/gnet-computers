@@ -5,16 +5,14 @@
     justify-content: space-between;
     align-items: center; 
     padding: 10px 10px;
-    border-bottom: 3px solid grey;
 }
 
 .navbar-links {
-color:black;
-justify-content: space-between;
-padding-right: 4px;
-text-decoration: none;
-gap:28px !important;
-
+    color: black;
+    justify-content: space-between;
+    padding-right: 4px;
+    text-decoration: none;
+    gap: 28px !important;
 }
 
 .navbar-links {
@@ -22,18 +20,60 @@ gap:28px !important;
     gap: 18px;
 }
 
-
 .navbar-links a:hover {
     color: blue; 
 }
 
-.Gnet{
+.Gnet {
     color: black;
+    border-radius: 7px;
     font-weight: bold;
-    text-decoration: none;
+    font-size: largest;
 }
-.Gnet a:hover{
-    color:blue
+
+.Gnet a:hover {
+    color: blue;
+    transform: translateY(-2px);
+}
 
 
+.menu-toggle {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black; 
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; 
+    }
+
+    .navbar-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background: white; 
+    }
+
+    .navbar-links.show {
+        display: flex; 
+    }
+}
+
+.menu-toggle:hover{
+    color:navy;
 }

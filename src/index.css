@@ -28,6 +28,6 @@ code {
 }
 
 .btn:hover {
-  background: #000072;
-  color: white;
+  background-color: #0056b3;
+  transform: translateY(-5px);
 }

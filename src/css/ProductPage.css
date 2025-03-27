@@ -25,8 +25,9 @@ nav a {
 
 .hero {
     background-color: navy; 
-    color: #ddd; 
-    padding: 2rem;
+    color: white; 
+    margin-top: 5px 2px;
+    padding: 2px;
     text-align: center; 
 }
 
@@ -51,6 +52,9 @@ nav a {
 }
 
 .Our{
-    color: #fff;
+    color: white;
     font-weight: lighter;
+}
+h2{
+    color:white;
 }

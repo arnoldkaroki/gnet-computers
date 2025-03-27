@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/Register.css'; // Import the CSS file for styling
+import '../css/Register.css'; 
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -22,7 +22,7 @@ const Register = () => {
         setError('');
         setLoading(true);
 
-        // Basic validation
+        
         if (!formData.name || !formData.email || !formData.password || !formData.confirmPassword) {
             setError('Please fill in all fields.');
             setLoading(false);
@@ -59,12 +59,12 @@ const Register = () => {
 
     return (
         <div className="register-container">
-            <h1>Create an Account</h1>
+            <h1>Create Your Account</h1>
             {error && <p className="error-message">{error}</p>}
             {success && <p className="success-message">Registration successful! You can now log in.</p>}
             <form className="register-form" onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="name">Full Name</label>
+                    <label htmlFor="name">Full Name:</label>
                     <input
                         type="text"
                         id="name"
@@ -75,7 +75,7 @@ const Register = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
+                    <label htmlFor="email">Email Address:</label>
                     <input
                         type="email"
                         id="email"
@@ -86,7 +86,7 @@ const Register = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="password">Password:</label>
                     <input
                         type="password"
                         id="password"

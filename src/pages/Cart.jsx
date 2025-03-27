@@ -36,7 +36,7 @@ const Cart = () => {
 
     return (
         <div className="cart-container">
-            <h1 className='Your'>Your Cart</h1>
+            <h1 className='Your'>Your Cart.</h1>
 
             {loading && <p>Loading...</p>}
 
@@ -78,7 +78,7 @@ const Cart = () => {
             <div className="add-item-to-cart">
                 <button className='btn'>
                     <Link to="/checkout">
-                   Proceed To Checkout
+                   Proceed To Checkout.
                     </Link>
                 </button>
             </div>

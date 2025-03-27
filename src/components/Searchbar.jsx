@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import '../css/searchbar.css'; // Optional: Import a CSS file for styling
+import '../css/searchbar.css'; 
 
 const SearchBar = ({ onSearch }) => {
     const [query, setQuery] = useState('');
 
     const handleInputChange = (event) => {
         setQuery(event.target.value);
-        onSearch(event.target.value); // Call the onSearch function passed as a prop
+        onSearch(event.target.value);
     };
 
     const handleSubmit = (event) => {
-        event.preventDefault(); // Prevent the default form submission
-        onSearch(query); // Call the onSearch function with the current query
+        event.preventDefault(); 
+        onSearch(query);
     };
 
     return (

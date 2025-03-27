@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/contact.css'; // Assuming you have a CSS file for styling
+import '../css/contact.css'; 
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -18,9 +18,9 @@ const ContactPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
+        
         console.log('Form submitted:', formData);
-        // Reset form
+      
         setFormData({ name: '', email: '', message: '' });
     };
 
@@ -29,7 +29,7 @@ const ContactPage = () => {
             <h1>Contact Us.</h1>
             <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
-                    <h2>Name:</h2>
+                    <h6>Name:</h6>
                     <input
                         type="text"
                         name="name"
@@ -39,7 +39,7 @@ const ContactPage = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <h2>Email:</h2>
+                    <h6>Email:</h6>
                     <input
                         type="email"
                         name="email"
@@ -49,13 +49,13 @@ const ContactPage = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <h2>Message:</h2>
-                    <textarea
+                    <h6>Message:</h6>
+                    <input
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         required
-                    ></textarea>
+                    />
                 </div>
                 <button type="submit" className="submit-button">Send Message</button>
             </form>

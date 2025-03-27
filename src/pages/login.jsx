@@ -48,10 +48,10 @@ const Login = () => {
             setLoading(false);
         }
     };
-<Link to="/login" className="login-link">Login</Link>
+<Link to="/login" className="login-link">Login </Link>
     return (
         <div className="login-container">
-            <h1 className='log'>Login </h1>
+            <h1 className='log'>Log in</h1>
             {error && <p className="error-message">{error}</p>}
             <form className="login-form" onSubmit={handleSubmit}>
                 <div className="form-group">

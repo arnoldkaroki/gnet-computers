@@ -1,0 +1,108 @@
+.settings-page {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+}
+
+.settings-page h1,h2 {
+    color: navy;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.settings-form {
+    background-color: #ffffff;
+    color: navy;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.settings-form label {
+    color: navy;
+    display: block;
+    margin-bottom: 10px; 
+    font-weight: bold;
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form textarea,
+.settings-form input[type="color"],
+.settings-form select {
+    width: 100%; 
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; 
+}
+
+.settings-form input[type="text"]:focus,
+.settings-form input[type="email"]:focus,
+.settings-form textarea:focus,
+.settings-form input[type="color"]:focus,
+.settings-form select:focus {
+    border-color: #007bff;
+    outline: none; 
+}
+
+.settings-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.settings-form button:hover {
+    background-color: #0056b3;
+}
+
+.settings-form button:active {
+    background-color: #004494; 
+}
+.user-management{
+    background-color: #ffffff;
+    color: navy;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.user-management button{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-management button:hover{
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}    
+
+.user-list button{
+    margin:2px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.user-list button:hover{
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}

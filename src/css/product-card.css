@@ -10,6 +10,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     overflow: hidden;
+    
     transition: transform 0.2s ease;
     background: white;
 }
@@ -21,7 +22,7 @@
 .product-image {
     width: 80%;
     height: 230px;
-    object-fit: cover;
+    object-fit: contain;
     border-bottom: 1px solid #eee;
 }
 

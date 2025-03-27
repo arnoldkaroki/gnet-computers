@@ -1,7 +1,7 @@
 .login-container {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: navy;
@@ -25,7 +25,7 @@ h1 {
     flex-direction: column;
 }
 
-.form-group {
+.form-group  {
     margin-bottom: 15px;
 }
 
@@ -35,8 +35,8 @@ label {
     color: #555;
 }
 
-input {
-    padding: 10px;
+.login-container input {
+    padding: auto;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
@@ -44,13 +44,13 @@ input {
 }
 
 input:focus {
-    border-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff; 
     outline: none;
 }
 
 .login-button {
     padding: 10px;
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color: #007bff; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -60,7 +60,8 @@ input:focus {
 }
 
 .login-button:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
+    transform: translateY(-5px); 
 }
 
 .register-link {
@@ -84,3 +85,7 @@ input:focus {
 .log {
     color: white;
 }
+
+.form-group input{
+    width: auto;
+} 

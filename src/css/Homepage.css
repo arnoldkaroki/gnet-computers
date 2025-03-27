@@ -23,13 +23,6 @@ nav a {
     text-decoration: none;
 }
 
-.hero {
-    margin-top: 23px;
-    background-color: navy;
-    color: #ddd;
-    padding: 2rem;
-    text-align: center;
-}
 
 .products {
     display: grid;

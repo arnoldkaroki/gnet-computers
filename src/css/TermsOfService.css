@@ -16,17 +16,17 @@
 
 .terms-of-service-container h2 {
     margin-top: 20px;
-    color: #007bff; /* Bootstrap primary color */
+    color: #007bff; 
 }
 
 .terms-of-service-container p {
     margin: 10px 0;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; 
     color: #555;
 }
 
 .terms-of-service-container a {
-    color: #007bff; /* Bootstrap primary color */
+    color: #007bff; 
     text-decoration: none;
 }
 

@@ -1,17 +1,22 @@
-import { useParams } from "react-router-dom";
-import products from "../data/products";  // Import product data
+import React from 'react';
+import '../../src/pages/ProductPage'; // Optional: Add styles for the product list
 
-export default function ProductPage() {
-  const { id } = useParams(); // Get the product ID from the URL
-  const product = products.find((p) => p.id === parseInt(id)); // Find the product by ID
+const ProductList = ({ products }) => {
+    if (!products || products.length === 0) {
+        return <p>No products found.</p>; // Handle the case where no products are available
+    }
 
-  if (!product) return <h1>Product not found!</h1>;
+    return (
+        <div className="product-list">
+            {products.map((product) => (
+                <div key={product.id} className="product-item">
+                    <h3>{product.name}</h3>
+                    <p>{product.description}</p>
+                    <p>Price: ${product.price.toFixed(2)}</p>
+                </div>
+            ))}
+        </div>
+    );
+};
 
-  return (
-    <div className="product-detail">
-      <h1>{product.name}</h1>
-      <p className="price">{product.price}</p>
-      <p className="description">{product.description}</p>
-    </div>
-  );
-}
+export default ProductList;

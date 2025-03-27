@@ -37,7 +37,7 @@
     justify-content: space-between;
     padding: rem;
     margin-left: 48px;
-    color: #f8f9fa;
+    color: blue;
     transition: transform 0.2s ease;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .quantity-controls button:hover {
-    color: #ffcc00;
+    color: lightblue;
 }
 
 .quantity-controls button:disabled {
