@@ -27,6 +27,10 @@ const AdminDashboard = () => {
                     <h2>Products</h2>
                     <p>Manage your products here. <a href="/admin/products">View Products</a></p>
                 </section>
+                <section id="Category">
+                    <h2>Category</h2>
+                    <p>View and manage categories here. <a href="/admin/category">View categories</a></p>
+                </section>
                 <section id="orders">
                     <h2>Orders</h2>
                     <p>View and manage orders here. <a href="/admin/orders">View Orders</a></p>

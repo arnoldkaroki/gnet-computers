@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 import '../../css/ProductManagement.css';
-import initialProducts from '../../data/products'; // Import the product data
+import initialProducts from '../../data/products'; 
+import { MdEdit } from 'react-icons/md'; 
+import EditProductModal from '../../components/EditCategoryModal'; 
 
 const ProductManagement = () => {
-    const [products, setProducts] = useState(initialProducts); // Set initial state from imported products
-    const [productName, setProductName] = useState('');
-    const [productPrice, setProductPrice] = useState('');
-
-    const addProduct = () => {
-        if (productName && productPrice) {
-            const newProduct = { name: productName, price: parseFloat(productPrice).toFixed(2) };
-            setProducts([...products, newProduct]);
-            setProductName('');
-            setProductPrice('');
-        } else {
-            alert('Please enter both product name and price.');
-        }
-    };
+    const [products, setProducts] = useState(initialProducts); 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentProduct, setCurrentProduct] = useState(null);
 
     const removeProduct = (index) => {
         const updatedProducts = products.filter((_, i) => i !== index);
+        setProducts(updatedProducts);
+    };
+
+    const openEditModal = (product) => {
+        setCurrentProduct(product);
+        setIsModalOpen(true);
+    };
+
+    const saveProduct = (updatedProduct) => {
+        const updatedProducts = products.map(prod => 
+            prod.name === updatedProduct.name ? updatedProduct : prod
+        );
         setProducts(updatedProducts);
     };
 
@@ -27,20 +30,10 @@ const ProductManagement = () => {
         <div className="product-management">
             <h1>Product Management</h1>
 
-            <h2>Add Product</h2>
-            <input
-                type="text"
-                value={productName}
-                onChange={(e) => setProductName(e.target.value)}
-                placeholder="Product Name"
-            />
-            <input
-                type="number"
-                value={productPrice}
-                onChange={(e) => setProductPrice(e.target.value)}
-                placeholder="Product Price"
-            />
-            <button onClick={addProduct}>Add Product</button>
+            <h2>Edit Products</h2>
+            <button onClick={() => openEditModal({ name: '', price: '' })}>
+                Add Product
+            </button>
 
             <h2>Product List</h2>
             <table>
@@ -57,12 +50,22 @@ const ProductManagement = () => {
                             <td>{product.name}</td>
                             <td>Ksh.{product.price}</td>
                             <td>
+                                <button onClick={() => openEditModal(product)}>
+                                    <MdEdit /> {/* Display the edit icon */}
+                                </button>
                                 <button onClick={() => removeProduct(index)}>Remove</button>
                             </td>
                         </tr>
                     ))}
                 </tbody>
             </table>
+
+            <EditProductModal 
+                isOpen={isModalOpen} 
+                onClose={() => setIsModalOpen(false)} 
+                product={currentProduct || {}} 
+                onSave={saveProduct} 
+            />
         </div>
     );
 };

@@ -17,10 +17,12 @@ import { CartContext, CartProvider } from "./context/CartContext";
 import ProductList from "./pages/ProductPage";
 import AdminDashboard from "./pages/admin/AdminDashboard"; 
 import ProductManagement from "./pages/admin/ProductManagement";
+import Category from "./pages/admin/Category";
 import OrderManagement from "./pages/admin/OrderManagement"; 
 import UserPage from "./pages/admin/UserPage"; 
 import SettingsPage from "./pages/admin/SettingsPage";
 import AnalyticsPage from "./pages/admin/AnalyticsPage";
+import CategoryUser from "./pages/Categoryuser";
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
             <Routes>
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/admin/products" element={<ProductManagement />} /> 
+              <Route path="/admin/category" element={<Category />} />
               <Route path="/admin/orders" element={<OrderManagement />} /> 
               <Route path="/admin/users" element={<UserPage />} /> 
               <Route path="/admin/settings" element={<SettingsPage />} /> 
@@ -45,6 +48,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/products" element={<ProductPage />} />
               <Route path="/product/:id" element={<ProductPage />} />
+              <Route path="/category" element={<CategoryUser />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/about" element={<About />} />

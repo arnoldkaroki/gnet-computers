@@ -47,6 +47,7 @@ const Navbar = () => {
             <ul className={`navbar-links ${isOpen ? "show" : ""}`} ref={menuRef}>
                 <li><Link to="/" onClick={closeMenu}>Home</Link></li>
                 <li><Link to="/products" onClick={closeMenu}>Products</Link></li>
+                <li><Link to="/category" onClick={closeMenu}>Categories</Link></li>
                 <li><Link to="/checkout" onClick={closeMenu}>Checkout</Link></li>
                 <li><Link to="/about" onClick={closeMenu}>About</Link></li>
                 <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
