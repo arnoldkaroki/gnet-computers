@@ -3,10 +3,10 @@ import '../../css/admin.css';
 import AdminNavbar from '../../components/AdminNavbar'; 
 
 const AdminDashboard = () => {
-    const [isNavVisible, setNavVisible] = useState(true); // State to manage sidebar visibility
+    const [isNavVisible, setNavVisible] = useState(true); 
 
     const toggleNav = () => {
-        setNavVisible(!isNavVisible); // Toggle the visibility state
+        setNavVisible(!isNavVisible); 
     };
 
     return (
@@ -17,12 +17,8 @@ const AdminDashboard = () => {
                     {isNavVisible ? 'Hide' : 'Show'} Navbar
                 </button>
             </header>
-            <AdminNavbar isNavVisible={isNavVisible} /> {/* Render the AdminNavbar */}
+            <AdminNavbar isNavVisible={isNavVisible} /> 
             <main className="admin-content">
-                <section id="overview">
-                    <h2>Overview</h2>
-                    <p>Welcome to the Gnet Computers admin dashboard. Here you can manage your products, orders, and users.</p>
-                </section>
                 <section id="products">
                     <h2>Products</h2>
                     <p>Manage your products here. <a href="/admin/products">View Products</a></p>

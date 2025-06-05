@@ -36,7 +36,7 @@ const Cart = () => {
 
     return (
         <div className="cart-container">
-            <h1 className='Your'>Your Cart.</h1>
+            <h1 className='Your'>Cart</h1>
 
             {loading && <p>Loading...</p>}
 

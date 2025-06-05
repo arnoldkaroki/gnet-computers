@@ -28,6 +28,7 @@
 
 .product-details {
     padding: 1.5rem;
+    
 }
 
 .product-name {
@@ -39,6 +40,7 @@
 .product-price {
     font-size: 1.25rem;
     color: black; 
+    background-color: white;
     margin: 0 0 1rem 0;
     font-weight: 600;
 }

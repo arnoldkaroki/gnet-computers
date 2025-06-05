@@ -5,7 +5,7 @@ import '../css/About.css';
 const About = () => {
     return (
         <div className="about-container">
-            <h1 className>About GNet Computers.</h1>
+            <h1 className>#KnowUs</h1>
             <p>
                 GNet Computers is a leading IT services provider based in Nairobi,Kenya, with branches all over Africa. We specialize in delivering high-quality software solutions, including CRM and ERP systems, custom application development, and comprehensive web development services.
             </p>

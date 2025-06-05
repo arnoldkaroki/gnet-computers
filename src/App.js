@@ -23,6 +23,8 @@ import UserPage from "./pages/admin/UserPage";
 import SettingsPage from "./pages/admin/SettingsPage";
 import AnalyticsPage from "./pages/admin/AnalyticsPage";
 import CategoryUser from "./pages/Categoryuser";
+import Shop from "./pages/shop";
+import Blog from "./pages/blog"
 
 function App() {
   return (
@@ -46,8 +48,10 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/products" element={<ProductPage />} />
-              <Route path="/product/:id" element={<ProductPage />} />
+              <Route path="shop" element={<Shop/>} />
+              <Route path="/product" element={<ProductPage />} />
+              <Route path="/product/:id" element={<ProductList />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/category" element={<CategoryUser />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />

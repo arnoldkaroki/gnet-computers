@@ -51,8 +51,7 @@ const ProductManagement = () => {
                             <td>Ksh.{product.price}</td>
                             <td>
                                 <button onClick={() => openEditModal(product)}>
-                                    <MdEdit /> {/* Display the edit icon */}
-                                </button>
+                                    <MdEdit />                               </button>
                                 <button onClick={() => removeProduct(index)}>Remove</button>
                             </td>
                         </tr>

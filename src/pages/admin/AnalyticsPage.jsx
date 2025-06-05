@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../../css/AnalyticsPage.css';
+import { Line } from 'react-chartjs-2';
 
 
 const AnalyticsPage = () => {
@@ -25,10 +26,22 @@ const AnalyticsPage = () => {
 
         fetchData();
     }, []);
-
+    
+    const [chartData, setChartData] = useState({
+        labels: [],
+        datasets: [
+            {
+                label: 'Website Traffic',
+                data: [],
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                fill: true,
+            },
+        ],
+    });
     return (
         <div className="analytics-container">
-            <h1 className="analytics-title"> Analytics Dashboard</h1>
+            <h1 className="analytics-title"> Analytics </h1>
             <div className="analytics-cards">
                 <div className="card">
                     <h2>Total Sales</h2>

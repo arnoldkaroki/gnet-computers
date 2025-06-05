@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
-import { IoIosColorFilter } from 'react-icons/io'; // Import the icon
+import React, { useState, useEffect } from 'react';
+import { IoIosColorFilter } from 'react-icons/io';
 import '../../css/SettingsPage.css';
-import '../../model/user'
+import '../../model/user';
 
 const SettingsPage = () => {
     const [themeColor, setThemeColor] = useState('#ffffff');
     const [userRole, setUserRole] = useState('admin');
-    const [users, setUsers] = useState([
-
-    ]);
+    const [users, setUsers] = useState([]);
     const [newUser, setNewUser] = useState({ name: '', email: '', role: 'viewer' });
     const [editingUser, setEditingUser] = useState(null);
+
+    // Effect to apply the theme color to the document
+    useEffect(() => {
+        document.documentElement.style.setProperty('--theme-color', themeColor);
+    }, [themeColor]);
 
     const handleSaveSettings = () => {
         console.log('Settings saved:', { themeColor, userRole });

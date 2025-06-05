@@ -22,7 +22,7 @@ h2 {
     color: #007bff;
 }
 
-p {
+.about-container p {
     line-height: 1.6;
     color: white;
 }
@@ -37,7 +37,7 @@ li {
     margin-bottom: 10px;
 }
 
-a {
+.about-container a {
     color: #007bff; 
     text-decoration: none;
 }

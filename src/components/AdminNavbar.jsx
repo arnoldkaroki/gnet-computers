@@ -6,7 +6,7 @@ const AdminNavbar = ({ isNavVisible }) => {
             {isNavVisible && (
                 <nav className="admin-nav">
                     <ul>
-                        <li><a href="#overview">Overview</a></li>
+                       
                         <li><a href="#products">Products</a></li>
                         <li><a href="#categories">Categories</a></li>
                         <li><a href="#orders">Orders</a></li>

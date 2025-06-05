@@ -106,3 +106,19 @@
     background-color: #0056b3;
     transform: translateY(-5px);
 }
+
+/* SettingsPage.css */
+:root {
+    --theme-color: #ffffff; 
+}
+
+body {
+    background-color: var(--theme-color);
+}
+
+
+.button {
+    background-color: var(--theme-color);
+    color: #fff;
+}
+

@@ -30,29 +30,29 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="navbar">
+        <nav className="nav">
             <div className="navbar-brand">
-                <Link to="/" className="navbar"> 
+                <Link to="/" className="nav"> 
                     <h1 className='Gnet'>Gnet Computers</h1>
                 </Link>  
             </div>
             <SearchBar onSearch={(query) => console.log(query)} />
 
-            <button className="menu-toggle" onClick={toggleMenu}>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-            </button>
 
-            <ul className={`navbar-links ${isOpen ? "show" : ""}`} ref={menuRef}>
-                <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-                <li><Link to="/products" onClick={closeMenu}>Products</Link></li>
-                <li><Link to="/category" onClick={closeMenu}>Categories</Link></li>
-                <li><Link to="/checkout" onClick={closeMenu}>Checkout</Link></li>
-                <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-                <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
-            </ul>
-            <Link to="/login" className="login-link" onClick={closeMenu}>Login</Link>
+        <div>
+         <ul className={`navbar ${isOpen ? "show" : ""}`} ref={menuRef}>
+            <li><a href='/'>Home</a></li>
+            <li><a href='/shop'>Shop</a></li>
+            <li><a href='/blog'>Blog</a></li>
+            <li><a href='/checkout'>Checkout</a></li>
+            <li><a href='/services'>Services</a></li>  
+            <a href='#' id='close'><i className='far far-times'> </i></a>
+         </ul>
+        </div> 
+        <div id='mobile'>
+            <a className='active' href='/shop'><i class="far fa-shopping-bag"></i></a>
+            <i id='bar' className='fas fa-outdent' onClick={toggleMenu}></i>
+        </div>
         </nav>
     );
 };

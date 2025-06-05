@@ -49,7 +49,7 @@ const Register = () => {
             }
 
             setSuccess(true);
-            setFormData({ name: '', email: '', password: '', confirmPassword: '' }); // Clear form
+            setFormData({ name: '', email: '', password: '', confirmPassword: '' }); 
         } catch (error) {
             setError(error.message);
         } finally {

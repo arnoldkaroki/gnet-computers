@@ -1,0 +1,9 @@
+/* StarRating.css */
+.star-rating {
+    font-size: 24px; 
+    color: #FFD700; 
+}
+
+.star-rating .empty {
+    color: #ccc;
+}

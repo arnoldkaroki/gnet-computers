@@ -48,7 +48,7 @@ const Category = () => {
                             <td>{category.description}</td>
                             <td>
                                 <button onClick={() => openEditModal(category)}>
-                                    <MdEdit /> {/* Display the edit icon */}
+                                    <MdEdit /> 
                                 </button>
                                 <button onClick={() => removeCategory(index)}>Remove</button>
                             </td>
