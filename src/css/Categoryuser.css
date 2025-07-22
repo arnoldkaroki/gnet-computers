@@ -1,44 +1,78 @@
-.category-user-page {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    padding: 20px;
+.category-management {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(17,24,39,0.04);
 }
 
-.category-list {
-    margin-top: 20px;
+.actions {
+  margin-bottom: 1.5rem;
 }
 
-.category-card {
-    background-color: white;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.add-btn {
+  background: #10B981;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.add-btn:hover {
+  background: #059669;
 }
 
-.category-card summary {
-    cursor: pointer;
-    font-weight: bold;
+.admin-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  font-size: 1rem;
 }
 
-.category-card p {
-    margin: 10px 0;
+.admin-table th {
+  text-align: left;
+  color: #111827;
+  font-weight: 600;
+  padding-bottom: 0.75rem;
 }
 
-.btn {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.admin-table td {
+  background: #f9fafb;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    color: white;
+.admin-table tr:nth-child(even) td {
+  background: #fff;
 }
 
-.btn-primary:hover {
-    background-color:navy ;
-    transform: translateY(-1px);
+.actions-cell button {
+  margin-right: 0.5rem;
+}
+
+.edit-btn, .remove-btn {
+  background: #10B981;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn {
+  background: #ef4444; /* red for remove */
+}
+
+.edit-btn:hover {
+  background: #059669;
+}
+
+.remove-btn:hover {
+  background: #b91c1c;
 }

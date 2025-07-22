@@ -1,47 +1,80 @@
 .product-management {
-    font-family: Arial, sans-serif;
-    background-color:navy;
-    margin: 20px;
+  background-image: url('/public/images/c1.png');
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(17,24,39,0.04);
 }
 
-table {
-    color:navy;
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.actions {
+  margin-bottom: 1.5rem;
 }
 
-th, td {
-    background-color: navy;
-    border: 100px solid #ddd;
-    padding: 8px;
-    text-align: left;
+.add-btn {
+  background: #06a6c9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.add-btn:hover {
+  background: #059669;
 }
 
-th {
-    background-color: #f2f2f2;
-    color:navy;
+.admin-table {
+
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  font-weight: 600;
 }
 
-.product-management button {
-    padding: 10px 15px;
-    font-size: 16px;
-    margin-left: 10px;
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.admin-table th {
+  text-align: left;
+  color: #111827;
+  font-weight: 600;
+  padding-bottom: 0.75rem;
 }
 
-button:hover {
-    background-color: lightblue;
-    transform: translateY(-1px); 
+.admin-table td {
+  
+  background-color:transparent;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
 }
 
+.admin-table tr:nth-child(even) td {
+  background: transparent;
+}
 
-input {
-    margin: 5px;
-    padding: 8px;
-    width: calc(50% - 20px);
+.actions-cell button {
+  margin-right: 0.5rem;
+}
+
+.edit-btn, .remove-btn {
+  background: #10B981;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn {
+  background: #ef4444; /* red for remove */
+}
+
+.edit-btn:hover {
+  background: #059669;
+}
+
+.remove-btn:hover {
+  background: #b91c1c;
 }

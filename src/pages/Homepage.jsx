@@ -14,28 +14,28 @@ const HomePage = () => {
     <h4>Don't Miss Out On Repairs!!!</h4>
     <h2>Up to <span>70% OFF</span> - All Electronics & Accessories</h2>
     <button className="cta-button">
-        <Link to="/products">Explore More</Link>
+        <Link to="/shop">Explore More</Link>
     </button>
 </section>
 
             <section className="feature"> 
-                <Link to="/products" className='fe-box'>
+                <Link to="/shop" className='fe-box'>
                     <img src='/images/f1.png' alt="Free Shipping" />
                     <h6>Free Shipping</h6>
                 </Link>
-                <Link to="/products" className='fe-box'>
+                <Link to="/shop" className='fe-box'>
                     <img src='/images/f2.png' alt="Online Order" />
                     <h6>Online Order</h6>
                 </Link>
-                <Link to="/products" className='fe-box'>
+                <Link to="/shop" className='fe-box'>
                     <img src='/images/f3.png' alt="Save Money" />
                     <h6>Save Money</h6>
                 </Link>
-                <Link to="/products" className='fe-box'>
+                <Link to="/shop" className='fe-box'>
                     <img src='/images/f4.png' alt="Promotions" />
                     <h6>Promotions</h6>
                 </Link>
-                <Link to="/products" className='fe-box'>
+                <Link to="/shop" className='fe-box'>
                     <img src='/images/f5.png' alt="Happy Sell" />
                     <h6>Happy Sell</h6>
                 </Link>
@@ -81,8 +81,8 @@ const HomePage = () => {
                     <h3>50% OFF</h3>
             </div>
             <div className='banner-box4'>
-                    <h2>HOLIDAY SALE</h2>
-                    <h3>50% OFF</h3>
+                    <h2>Brand New ELECTRONICS</h2>
+                    <h3>#wegotchu</h3>
             </div>
             <div className='banner-box5'>
                     <h2>PHONE SALES</h2>
@@ -97,7 +97,7 @@ const HomePage = () => {
                 </div>
                 <div className='form'> 
                    <input type="text" placeholder='your e-mail address'></input>
-                   <button className='cta-button'>Sign Up</button> 
+                   <Link to='/register'><button className='cta-button'>Sign Up</button></Link> 
                 </div>
             </section>
         </div>
