@@ -3,7 +3,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const { errorHandler } = require('./utils/errorhandler');
 const cors = require('cors');
-const Product = require('./model/product');
+const Product = require('..//src/model/product');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
