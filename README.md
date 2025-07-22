@@ -72,3 +72,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # gnet-computers
 >>>>>>> ce1bf25f7ddadf320cf3b81acec14c3c4c660542
+
+Links:
+# FRONTEND:
+https://gnet-computers-bay.vercel.app/
+
+# BACKEND
+https://gnet-computers.onrender.com/
