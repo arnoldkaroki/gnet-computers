@@ -13,7 +13,7 @@ app.use(cors())
 
 app.get('/', (req, res) => res.send('API Running'));
 
-connectDB();
+await connectDB();
 
 
  app.use('/api/products', productRoutes);
