@@ -3,11 +3,13 @@ import '../../css/ProductManagement.css';
 import initialProducts from '../../data/products'; 
 import { MdEdit } from 'react-icons/md'; 
 import EditProductModal from '../../components/EditCategoryModal'; 
+import AddProductModal from '../../components/AddProductModal';
 
 const ProductManagement = () => {
   const [products, setProducts] = useState(initialProducts); 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(null);
+  const [isProductModalOpen, setIsProductModalOpen] = useState(false);
 
   const removeProduct = (index) => {
     const updatedProducts = products.filter((_, i) => i !== index);
@@ -18,6 +20,11 @@ const ProductManagement = () => {
     setCurrentProduct(product);
     setIsModalOpen(true);
   };
+
+  const openAddProductModal = () => {
+    setIsProductModalOpen(true);
+  }
+      
 
   const saveProduct = (updatedProduct) => {
     const updatedProducts = products.map(prod => 
@@ -31,7 +38,7 @@ const ProductManagement = () => {
       <h1>Product Management</h1>
 
       <div className="actions">
-        <button className="add-btn" onClick={() => openEditModal({ name: '', price: '' })}>
+        <button className="add-btn" onClick={() => openAddProductModal()}>
           Add Product
         </button>
       </div>
@@ -74,6 +81,13 @@ const ProductManagement = () => {
       <EditProductModal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 
+        product={currentProduct || {}} 
+        onSave={saveProduct} 
+      />
+
+       <AddProductModal
+        isOpen={isProductModalOpen} 
+        onClose={() => setIsProductModalOpen(false)}
         product={currentProduct || {}} 
         onSave={saveProduct} 
       />

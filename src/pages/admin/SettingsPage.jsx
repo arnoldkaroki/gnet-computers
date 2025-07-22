@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { IoIosColorFilter } from 'react-icons/io';
 import '../../css/SettingsPage.css';
-import '../../model/user';
 
 const SettingsPage = () => {
     const [themeColor, setThemeColor] = useState('#ffffff');
