@@ -1,9 +1,9 @@
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const connectDB = require('./config/db');
-const { errorHandler } = require('./utils/errorhandler');
 const cors = require('cors');
-const Product = require('..//src/model/product');
+const Product = require('./model/product');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -13,14 +13,20 @@ app.use(cors())
 
 app.get('/', (req, res) => res.send('API Running'));
 
-await connectDB();
+connectDB();
+
+const productRoutes = require('./routes/productRoutes');
+const userRoutes = require('./routes/Userroutes');
+const { errorHandler } = require('./utils/errorhandler');
 
 
  app.use('/api/products', productRoutes);
  app.use('/api/users', userRoutes);
 
 
+ //ERROR HANDLER
 app.use(errorHandler);
+
 
 app.get('/', (req, res) => {
     res.status(200).json({ message: "Api hit successfully" })
