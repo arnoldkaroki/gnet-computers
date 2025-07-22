@@ -4,6 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "build": "npm start build",
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,12 +14,15 @@
   "deiption": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "config": "^4.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.6",
-    "mysql2": "^3.12.0"
+    "mysql2": "^3.12.0",
+    "node": "^20.19.4",
+    "react": "^19.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
